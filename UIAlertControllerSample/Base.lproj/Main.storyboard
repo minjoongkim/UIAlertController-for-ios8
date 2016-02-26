@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxP-4o-wzu">
+                                <rect key="frame" x="261" y="40" width="78" height="30"/>
+                                <state key="normal" title="simpleAlert"/>
+                                <connections>
+                                    <action selector="simpleAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRL-wL-LOu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tq-T3-D4a">
+                                <rect key="frame" x="236" y="102" width="128" height="30"/>
+                                <state key="normal" title="simpleActionSheet"/>
+                                <connections>
+                                    <action selector="simpleActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JZq-sK-7Q5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q7-MJ-Nbm">
+                                <rect key="frame" x="254" y="164" width="92" height="30"/>
+                                <state key="normal" title="textFieldAlert"/>
+                                <connections>
+                                    <action selector="textFieldAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7P-jb-cD0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-uA-gf9">
+                                <rect key="frame" x="229" y="233" width="143" height="30"/>
+                                <state key="normal" title="popOverActionSheet"/>
+                                <connections>
+                                    <action selector="popOverActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXO-Wi-IZm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YxP-4o-wzu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="4OO-eq-yRb"/>
+                            <constraint firstItem="0tq-T3-D4a" firstAttribute="top" secondItem="YxP-4o-wzu" secondAttribute="bottom" constant="32" id="DQd-Ma-U1M"/>
+                            <constraint firstItem="5q7-MJ-Nbm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jud-LG-oqo"/>
+                            <constraint firstItem="Ifd-uA-gf9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ven-bt-A9h"/>
+                            <constraint firstItem="5q7-MJ-Nbm" firstAttribute="top" secondItem="0tq-T3-D4a" secondAttribute="bottom" constant="32" id="adT-bR-PQu"/>
+                            <constraint firstItem="0tq-T3-D4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dOu-Te-D8W"/>
+                            <constraint firstItem="Ifd-uA-gf9" firstAttribute="top" secondItem="5q7-MJ-Nbm" secondAttribute="bottom" constant="39" id="g7o-bD-BlK"/>
+                            <constraint firstItem="YxP-4o-wzu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycK-kW-GtC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
